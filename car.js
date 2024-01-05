@@ -1,9 +1,20 @@
 class Car{
-    constructor(x, y, width, height, controlType, maxSpeed = 3, color = "blue"){
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height; 
+    #x;
+    #y;
+    #width;
+    #height;
+    #controlType;
+    #maxSpeed;
+    #color;
+
+    constructor(x, y, width, height, controlType, maxSpeed = 3, color = "blue") {
+        this.#x = x;
+        this.#y = y;
+        this.#width = width;
+        this.#height = height;
+        this.#controlType = controlType;
+        this.#maxSpeed = maxSpeed;
+        this.#color = color;
 
         this.speed = 0;
         this.acceleration = 0.2;
