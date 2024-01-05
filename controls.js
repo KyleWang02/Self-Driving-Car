@@ -1,9 +1,9 @@
 class Controls{
     constructor(type){
         this.forward = false;
-        this.backward = false;
         this.left = false;
         this.right = false;
+        this.backward = false;
 
         switch(type){
             case "KEYS":
